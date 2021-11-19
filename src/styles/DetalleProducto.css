@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body{
+    background-color: #c4c4c4;
+}
+
+.detail-container{
+    background-color: #fff;
+    width: 850px;
+    margin: auto;
+    margin-top:30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 5px rgb(43, 44, 44);
+}
+
+.detail-container .image-info-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.detail-container .image-info-container .picture-container img{
+    width: 300px;
+    height:600px;
+    margin-left:7%;
+}
+
+.detail-container .image-info-container .info-container{
+    margin-left: 100px;
+    margin-top: 30px;
+    
+}
+
+.detail-container .image-info-container .info-container button{
+    width: 370px;
+    height: 40px;
+    background-color: #fff159;
+    border: 0;
+    box-shadow: 0px 2px 5px rgb(43, 44, 44);
+    cursor: pointer;
+}
+
+
+.detail-container .description-container h2{
+    margin-left: 5%;
+}
+
+.detail-container .description-container h3{
+    font-size: 15px;
+    width:90%;
+    margin: auto;
+    color: #4b4b4b;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width:900px){
+    .detail-container{
+        width: 650px;
+    }
+
+    .detail-container .image-info-container .picture-container img{
+        width:200px;
+        height:400px;
+    }
+
+    .detail-container .image-info-container .info-container button{
+        width: 300px;
+    }
+
+    .detail-container .image-info-container .info-container{
+        margin-left: 60px;
+    }
+}
+
+@media (max-width:670px){
+    .detail-container .image-info-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .detail-container{
+        width: 450px;
+    }
+
+    .detail-container .image-info-container .picture-container img{
+        width:200px;
+        height:400px;
+        margin-left:28%;
+    }
+
+    .detail-container .image-info-container .info-container button{
+        width: 300px;
+    }
+
+    .detail-container .image-info-container .info-container{
+        margin-left: 60px;
+    }
+}
